@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anestesia Plus — Suporte</title>
+  <meta name="description" content="Página oficial de suporte do aplicativo Anestesia Plus. Ajuda, FAQ, Política de Privacidade, Termos de Uso e contato." />
+  <style>
+    :root {
+      --bg: #0b0d12;
+      --panel: #11151c;
+      --muted: #9aa4b2;
+      --text: #e9eef5;
+      --brand: #4ea8de;
+      --brand-2: #a3d5ff;
+      --success: #3ecf8e;
+      --danger: #ff6b6b;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box }
+    html, body { height: 100% }
+    body {
+      margin: 0; font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text); background: radial-gradient(1200px 800px at 80% -10%, #19324c 0%, var(--bg) 45%), var(--bg);
+    }
+    a { color: var(--brand); text-decoration: none }
+    a:hover { text-decoration: underline }
+    .container { max-width: 980px; margin: 0 auto; padding: 24px }
+    header { display:flex; align-items:center; justify-content:space-between; gap: 16px; padding: 20px 0 }
+    .brand { display:flex; align-items:center; gap:12px }
+    .logo { width:40px; height:40px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); display:grid; place-items:center; font-weight:800; color:#0a0a0a }
+    nav { display:flex; gap: 14px; flex-wrap: wrap }
+    nav a { color: var(--muted) }
+    nav a.active, nav a:hover { color: var(--text) }
+
+    .hero { padding: 40px 0 20px }
+    .hero h1 { margin:0 0 8px; font-size: clamp(28px, 6vw, 42px); letter-spacing: -0.02em }
+    .hero p { margin:0; color: var(--muted) }
+
+    .grid { display:grid; grid-template-columns: 1fr; gap: 18px; margin: 24px 0 }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1.2fr 0.8fr } }
+
+    .card { background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.07); border-radius: var(--radius); padding: 20px }
+    .card h2 { margin: 0 0 8px; font-size: 20px }
+    .card h3 { margin: 18px 0 6px; font-size: 16px; color: var(--brand-2) }
+    .muted { color: var(--muted) }
+    .badge { display:inline-block; padding: 4px 8px; border-radius: 999px; background: rgba(78,168,222,0.15); color: var(--brand-2); border: 1px solid rgba(78,168,222,0.35); font-size: 12px; letter-spacing: .02em }
+    .cta-bar { display:flex; gap: 10px; flex-wrap: wrap; margin-top: 12px }
+    .btn { display:inline-block; padding: 10px 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); background: #121826; color: var(--text); font-weight: 600 }
+    .btn:hover { filter: brightness(1.05) }
+    .btn.primary { background: linear-gradient(180deg, rgba(78,168,222,0.2), rgba(78,168,222,0.05)); border-color: rgba(78,168,222,0.5) }
+
+    .list { margin: 8px 0 0; padding: 0 0 0 18px }
+    .list li { margin: 8px 0 }
+
+    footer { margin: 40px 0 10px; color: var(--muted); font-size: 14px }
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent); margin: 24px 0 }
+    .kbd { border:1px solid rgba(255,255,255,0.18); border-bottom-width:2px; padding: 1px 6px; border-radius: 6px; background: rgba(255,255,255,0.04); font-size: 12px }
+    code { background: rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding: 2px 6px }
+    .small { font-size: 14px }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">A+</div>
+        <div>
+          <div style="font-weight:800; font-size:18px">Anestesia Plus</div>
+          <div class="muted small">Registro anestésico simples, padronizado e seguro</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#suporte" class="active">Suporte</a>
+        <a href="#faq">FAQ</a>
+        <a href="#privacidade">Privacidade</a>
+        <a href="#termos">Termos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Central de Suporte</h1>
+      <p>Bem-vindo! Aqui você encontra ajuda, perguntas frequentes e os documentos oficiais do Anestesia Plus.</p>
+      <div class="cta-bar">
+        <a class="btn primary" href="#faq">Ver perguntas frequentes</a>
+        <a class="btn" href="#contato">Falar com o suporte</a>
+      </div>
+    </section>
+
+    <div class="grid" id="suporte">
+      <article class="card">
+        <h2>Como podemos ajudar?</h2>
+        <p>O Anestesia Plus foi criado para facilitar e padronizar o registro anestésico. Se algo não estiver claro ou você encontrou um problema, estamos aqui para ajudar.</p>
+        <h3>Começando</h3>
+        <ul class="list">
+          <li>Permita o uso de <strong>Localização “Durante o uso do app”</strong> para integração com o ambiente hospitalar.</li>
+          <li>Selecione o <strong>hospital ativo</strong> para padronizar a ficha e o PDF institucional automaticamente.</li>
+          <li>Crie um <strong>novo caso</strong> e preencha os campos essenciais (paciente, ASA, plano, procedimento e anestesia).</li>
+        </ul>
+        <h3>Recursos úteis</h3>
+        <ul class="list">
+          <li>Resumo com <strong>sinais vitais e gráfico</strong> editáveis por toque.</li>
+          <li>Monitores e parâmetros: ECG, oximetria, PaNI, capnógrafo, gases, acessos e diurese.</li>
+          <li><strong>Grade seriada</strong> com bloqueio/edição de colunas e distribuição automática de soluções/diurese.</li>
+          <li>Fármacos com <strong>edição, reordenação</strong> e <strong>presets</strong> (Raqui, Geral balanceada, Sedação) — crie presets personalizados.</li>
+          <li>Exportação de <strong>PDF completo</strong>, pronto para arquivar, enviar ou imprimir.</li>
+        </ul>
+        <p class="muted small">Última atualização: 31 out 2025</p>
+      </article>
+
+      <aside class="card" id="contato">
+        <h2>Contato do Suporte</h2>
+        <p>Fale com a gente para dúvidas, feedbacks ou relatos de bugs.</p>
+        <ul class="list">
+          <li>E-mail: <a href="mailto:johabermedrado@hotmail.com">johabermedrado@hotmail.com</a></li>
+        </ul>
+        <p class="muted small">Tempo de resposta estimado: 1–2 dias úteis.</p>
+        <div class="divider"></div>
+        <h3>Informações úteis ao reportar</h3>
+        <ul class="list">
+          <li>Modelo do iPhone e versão do iOS (ex.: iPhone 14, iOS 18)</li>
+          <li>Versão do app (ex.: <span class="kbd">1.0.2 (45)</span>)</li>
+          <li>Passo a passo para reproduzir o problema</li>
+          <li>Se possível, anexe captura de tela</li>
+        </ul>
+      </aside>
+    </div>
+
+    <article class="card" id="faq">
+      <h2>FAQ — Perguntas Frequentes</h2>
+      <h3>O app funciona sem internet?</h3>
+      <p>Sim. O Anestesia Plus é <strong>local‑first</strong>: os dados ficam no dispositivo. Internet é necessária apenas para enviar relatórios ou atualizações pela App Store.</p>
+
+      <h3>Quais permissões o app solicita?</h3>
+      <p><strong>Localização (Durante o uso)</strong> para habilitar recursos no ambiente hospitalar e associar corretamente o logotipo/identidade do hospital. <strong>Haptics</strong> para feedback tátil em interações. Não solicitamos acesso a fotos, contatos ou microfone.</p>
+
+      <h3>Meus dados são enviados para nuvem?</h3>
+      <p>Não por padrão. Os registros são armazenados localmente no dispositivo. Se você optar por compartilhar um relatório (PDF) por e-mail ou mensageria, ele será transmitido pelo serviço escolhido por você.</p>
+
+      <h3>Como exportar o PDF?</h3>
+      <p>Abra o caso, toque em <strong>Exportar PDF</strong> e use o compartilhamento do iOS para enviar ou salvar.</p>
+
+      <h3>Posso personalizar hospitais, presets e protocolos?</h3>
+      <p>Sim. É possível definir hospital ativo, criar <em>presets</em> próprios e organizar fármacos/ordem conforme a sua prática.</p>
+
+      <h3>Como solicitar uma funcionalidade?</h3>
+      <p>Envie um e-mail para o suporte descrevendo o uso clínico e o benefício esperado. Priorizamos melhorias que elevam a segurança e padronização do registro.</p>
+    </article>
+
+    <article class="card" id="privacidade">
+      <h2>Política de Privacidade</h2>
+      <p>Levamos a privacidade a sério. Esta política explica como tratamos informações no Anestesia Plus.</p>
+      <h3>Coleta e uso de dados</h3>
+      <ul class="list">
+        <li><strong>Dados clínicos registrados no app</strong> (ex.: sinais vitais, fármacos, notas) são armazenados <strong>localmente</strong> no seu dispositivo.</li>
+        <li><strong>Localização</strong>: usada somente para habilitar funcionalidades vinculadas ao ambiente hospitalar (ex.: seleção/identidade do hospital). Não registramos histórico de localização.</li>
+        <li><strong>Diagnósticos técnicos</strong> (crashes, métricas anônimas da Apple) podem ser coletados pelo iOS se você optar por compartilhar com desenvolvedores.</li>
+      </ul>
+      <h3>Compartilhamento</h3>
+      <p>Não vendemos nem compartilhamos dados pessoais com terceiros. O envio de relatórios (PDF) ocorre apenas por ação do usuário, via serviços de sua escolha (e-mail, mensageria, nuvem).</p>
+      <h3>Retenção e segurança</h3>
+      <p>Os dados permanecem no dispositivo até que sejam apagados pelo usuário. Recomendamos o uso de senha/biometria do iOS e <strong>backup criptografado</strong> quando aplicável.</p>
+      <h3>Seus direitos</h3>
+      <p>Você pode editar ou excluir casos a qualquer momento pelo próprio app. Para dúvidas sobre privacidade, contate: <a href="mailto:johabermedrado@hotmail.com">johabermedrado@hotmail.com</a>.</p>
+    </article>
+
+    <article class="card" id="termos">
+      <h2>Termos de Uso</h2>
+      <p>Ao utilizar o Anestesia Plus, você concorda com os termos abaixo.</p>
+      <h3>Escopo</h3>
+      <p>O aplicativo auxilia no registro e documentação anestésica, cabendo ao profissional a validação clínica e tomada de decisão.</p>
+      <h3>Responsabilidades</h3>
+      <ul class="list">
+        <li>O usuário é responsável pela veracidade das informações inseridas e pela guarda dos relatórios.</li>
+        <li>O desenvolvedor não se responsabiliza por usos fora das recomendações do aplicativo.</li>
+      </ul>
+      <h3>Licença e propriedade</h3>
+      <p>O app é licenciado, não vendido. Marca, logotipo e código são propriedade do desenvolvedor.</p>
+      <h3>Suporte</h3>
+      <p>Oferecemos suporte por e-mail dentro de prazos razoáveis, conforme capacidade do time.</p>
+    </article>
+
+    <footer>
+      <div class="divider"></div>
+      <div>© <span id="year"></span> Anestesia Plus — Central de Suporte · <span class="badge">v1.0</span></div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // scroll spy (leve)
+    const links = document.querySelectorAll('nav a');
+    const sections = [...links].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const opt = { rootMargin: '-60% 0px -40% 0px', threshold: [0, 1] };
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting) {
+          links.forEach(l=>l.classList.remove('active'));
+          const id = '#' + e.target.id;
+          const active = [...links].find(l=>l.getAttribute('href')===id);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, opt);
+    sections.forEach(s=>obs.observe(s));
+  </script>
+</body>
+</html>
